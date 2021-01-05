@@ -1,0 +1,260 @@
+GOOGLE PLAY STORE ANALYSIS
+
+
+1.	Introduction
+
+Google Play Store:-
+
+Google Play, formerly Android Market, is a digital distribution service operated and developed by Google. It serves as the official app store for certified devices running on the Android operating system, allowing users to browse and download applications developed with the Android software development kit (SDK) and published through Google. Google Play also serves as a digital media store, offering music, books, movies, and television programs. 
+
+Google Play was launched on March 6, 2012, bringing together Android Market, Google Music, and the Google e-Bookstore under one brand, marking a shift in Google's digital distribution strategy. The services included in Google Play are Google Play Books, Google Play Games, and Google Play Music, which is in the process of being phased out in favour of YouTube Music and Google Podcasts, and formerly included Google Play Newsstand before it was phased out in November 2018, and Google Play Movies & TV before being renamed to Google TV in September 2020.
+
+The Google Play Store is one biggest and most important parts of Android. It’s the central hub for all app and game content as well as off-shoots for ebooks, movies, TV shows, and music. 
+The Google Play Store is a digital storefront for various types of media. People most commonly use the app to download various apps and games. However, the Play Store also sells ebooks, music, TV shows, and movies. Everything, aside from apps and games, has its own app so we can optionally browse those sections only.
+
+
+While Google Play is strongly associated with Android, it is not a part of the stock Android experience. It’s actually an extra piece of software for Google’s specific Android experience. That’s why the Play Store isn’t available on Android forks like Amazon’s Fire OS. OEMs must adhere to a specific set of rules to get Google apps and the Play Store is part of that package. There are alternate app stores available for Android as well.
+
+
+
+
+
+
+
+
+
+2.	Objectives/Scope of the Analysis
+
+The Internet is a true gold mine of data. E-commerce and review sites are brimming with a lot of untapped data with a prominent potential to convert into meaningful insights that can help with robust decision making. Here, we explore using data science and machine learning techniques on data retrieved from one such avenue on the internet, the Google Play Store.
+
+
+The Objective/Scope of the Analysis are as following:-
+
+	Application Name and Category
+
+	Size of Application and Type- Free or Paid
+
+	User Rating and Number of Reviews
+
+	Number of User Downloaded the Application
+
+	Targeted Age Group
+
+
+
+
+
+3.	Source of dataset
+
+Kaggle is the source of dataset, It consists of in total of 10842 rows and 13 columns. The dataset taken is of Google play store application and is taken from Kaggle , which is the world’s largest community for data scientists to explore, analyse and share data. The Play Store apps data has enormous potential to drive app-making businesses to success. Actionable insights can be drawn for developers to work on and capture the Android market. It is the web scraped data of 10k Play Store apps for analysing the Android market.
+
+The columns of the dataset are as follows:
+
+1) App (Name)
+2) Category (App)
+3) Rating (App)
+4) Reviews (User)
+5) Size (App)
+6) Installs (App)
+7) Type (Free/Paid)
+8) Price (App)
+9) Content Rating (Everyone/Teenager/Adult)
+10) Genres (Detailed Category)
+11) Last Updated (App)
+12) Current Version (App)
+13) Android Version (Support)
+
+
+4.	ETL Process
+
+The aim of my analysis is to provide insights about android applications and their categories.I want to deep dive in data for the factors of influences on an application, to know why and how certain applications succeed and others. Also, what is required for an application to be considered as successfully topping the charts.
+
+ETL is the process by which data is extracted from data sources (that are not optimized for analytics), and moved to a central host (which is). The exact steps in that process might differ from one ETL tool to the next, but the end result is the same. In other way, ETL is a process that extracts the data from different source systems, then transforms the data (like applying calculations, concatenations, etc.) and finally loads the data into the Data Warehouse system. Full form of ETL is Extract, Transform and Load.
+
+
+
+
+
+
+
+
+
+
+
+
+
+A contemporary ETL process using a Data Warehouse :-
+
+
+ 
+
+
+
+5.	Analysis on dataset (for each analysis)
+
+
+Analysis is a very major tool from which we can resolve many problems and predict many solutions and ways for the betterment of the application. Some key observations at first glance include how the performance of the App can be improved from the reviews obtained and different patterns that could be found to get more business values out of the same. The principal purpose of Data Science is to find patterns within data. It uses various statistical techniques to analyse and draw insights from the data. From data extraction, wrangling and pre-processing, a Data Scientist must scrutinize the data thoroughly.
+
+i.	Introduction
+
+The Play Store apps data has enormous potential to drive app-making businesses to success. Actionable insights can be drawn for developers to work on and capture the Android market.
+
+The most critical thing from which patterns could be obtained is data. It may be a single review or a bundle of them. Whatever data comes in, could be used to draw value out of it. Data comes with unexpected values too, which should be handled before it affects the performance of trained models that predict the outcome.
+
+
+ii.	General Description
+
+The purpose of my project is to gather and analyse detailed information on apps in the Google Play Store in order to provide insights on app features and the current state of the Android app market. The dataset contains immense possibilities to improve business values and have a positive impact. It is not limited to the problem taken into consideration for this project. Many other interesting possibilities can be explored using this dataset.
+
+iii.	Specific Requirements, functions and formulas
+
+
+The first step is “to clean the data”. It will give the results more accurate. By finding all unique values of each row the inappropriate values can be identified. Different methods can then be used for removing them or to change those values accordingly to use them to make predictions better.
+
+Data Cleaning:- I have cleaned my data by using Tableau Prep Builder
+
+
+The raw data can have random sorting, so it’s arrangement in sequential way is very important. Each and every piece of raw data may lead to a more accurate result. For solving a regression problem, we should convert the strings to a numerical format. Though the dataset may seem to have the correct datatypes for each column, we need to check it. Inconsistent datatypes will create issues while dealing with regression problems.
+
+
+
+
+
+
+iv.	Analysis results
+The factors that require attention in solving this problem are,
+1) Category
+2) Reviews
+3) Size
+4) Installs
+5) Price
+6) Content Rating
+
+ 
+
+On analyzing the data, RATINGS of the app can be concluded as the most important parameter that plays an important role in depicting how better the app performs compared to the other apps in the market. It also hints on how well the company works on implementing the feedback given by the users. After all, users are the key to modern software businesses.
+
+
+
+ 
+
+ 
+
+
+ 
+Health & Fitness, Travel & Local and Education were the most common categories. Four categories of applications, including Health & Fitness, Travel & Local, Education and Finance, accounted for more than 50% of the apps in our dataset.
+
+	Most of the apps (58%) in the Google Play Store were free to install at the time of data collection. However, 26% of free apps had in-app purchases feature, concealing their true cost. In-app purchasing refers to buying extra content or subscriptions inside an application on a mobile device. Free apps are more likely to have in-app purchases feature.
+
+
+	It looks like certain app categories have more free apps available for download than others. In our dataset, the majority of apps in Food & Drink, News and Magazines, as well as Social categories were free to install. At the same time, Health & Fitness, Travel & Local, Education, and Medical categories had the biggest number of paid apps available for download.
+
+
+
+	The Google Play Store offers a wide range of applications, but most of these apps had been downloaded only by a small number of people. In our dataset, 28% of the apps had been downloaded fewer than 100 times, and about 74% of the apps had been downloaded fewer than 50K times. Among the apps that had been downloaded between 500M to 1B+ times were Instagram, Facebook, Google + and Google News.
+
+	An average rating of 4.3-4.4 (out of 5.0) are the most common rating in our dataset. Specifically, many apps having rating above 4. 
+
+
+v.	Visualization 
+
+Data visualization is useful for data cleaning, exploring data structure, detecting outliers and unusual groups, identifying trends and clusters, spotting local patterns, evaluating modeling output, and presenting results. It is essential for exploratory data analysis and data mining to check data quality and to help analysts become familiar with the structure and features of the data before them.
+In this project, Data visualization can be used to get a glimpse of the distribution of the Google Play Application. This can help businesses in several ways. Apps could be targeted to a particular market. A business could analyse its approach to entering a market with more/moderate/fewer competitors. If the app holds a feature that may change the future usage of users, a data-driven business venture could launch the app in the market of more competitors to get a better hold of the market relying on that key feature and making further development.
+Another strategy could be to build something different from the normal apps and their usage as the data shows to bring in something new to the market.
+
+
+
+Visualization can further be used to get finer details of the split in categories. For example, if the category is “Gaming”, it consists of “Arcade”, “Board”, “Racing”, etc. This could be used to get into a more specific domain in “Gaming”. Such insights can enable consultants to get a clearer view for framing a business model while launching a new app. The “Ratings” of the app could be used to look whether the original ratings of the app matches the predicted rating to know whether the app is performing better or worse compared to other apps on the Play Store.
+
+ 
+
+
+                                                 Type- Free/Paid
+
+ 
+
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+
+6.	List of Analysis with results
+
+	Application Name and Category
+
+In this section, I have analysed the various category and their name from the dataset.
+
+
+
+ 
+
+
+
+ 
+
+
+	Size of Application and Type- Free or Paid
+
+In this section, I have analysed about the types of application, whether it is free or paid.
+
+ 
+
+ 
+ 
+
+
+	User Rating and Number of Reviews
+
+In this category, my analysis is on reviews and rating of the application given by the various users.
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+	Number of User Downloaded the Application
+
+This analysis is based upon the use of application, that is many user downloaded the application.
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+	Targeted Age Group
+
+In this section my analysis is based upon the age. For which age group the application is made or which group is specially targeted.
+
+ 
+
+
+----------------------------------------------------------------------The End------------------------------------------------------------
